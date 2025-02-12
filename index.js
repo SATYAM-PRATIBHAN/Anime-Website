@@ -49,18 +49,23 @@ window.addEventListener('scroll', () => {
 });
 
 // Initialize Swiper for home section
-var swiper = new Swiper(".home", {
+var swiper = new Swiper(".home.swiper", {
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
+      delay: 5000,
+      disableOnInteraction: false,
     },
     pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+      el: ".swiper-pagination",
+      clickable: true,
     },
-});
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    loop: true,
+  });
 
 // Initialize Swiper for coming section
 var swiper = new Swiper(".coming-container", {
