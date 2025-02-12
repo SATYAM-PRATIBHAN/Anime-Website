@@ -51,7 +51,6 @@ header {
 
 header.shadow {
     background: var(--bg-color);
-
 }
 
 header.shadow .navbar a {
@@ -78,6 +77,8 @@ header.shadow .logo {
 
 .navbar {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 5rem;
 }
 
@@ -121,10 +122,15 @@ header.shadow .logo {
     font-size: 1rem;
     font-weight: 500;
     border-radius: 7px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .btn:hover {
-    background: #fa1216;
+    background: transparent;
+    border: 2px solid #fa1216;
+    color: #fa1216;
 }
 
 .container {
@@ -146,15 +152,14 @@ header.shadow .logo {
 }
 
 .container .home-text {
-    margin-top: 20%;
+    margin-top: 250px;
     padding: 0 100px;
-
 }
 
 .container .home-text h1 {
     font-size: 3.5rem;
     font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .container .home-text span {
@@ -269,7 +274,7 @@ header.shadow .logo {
 }
 
 .newsletter form {
-    padding: 8px;
+    padding: 8px 8px 8px 16px;
     gap: 10px;
     display: flex;
     background: var(--bg-color);
@@ -282,8 +287,12 @@ header.shadow .logo {
     width: 280px;
 }
 
+.newsletter form input[type="email"] {
+    font-size: 1rem;
+}
+
 .newsletter form input::placeholder {
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 400;
 }
 
@@ -291,6 +300,7 @@ header.shadow .logo {
     border: none;
     outline: none;
     cursor: pointer;
+    border: 2px solid #fa1216;
 }
 
 .footer {
