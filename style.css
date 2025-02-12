@@ -133,6 +133,11 @@ header.shadow .logo {
     color: #fa1216;
 }
 
+#separate-btn:hover {
+    color: #fff;
+    border: 2px solid #fff;
+}
+
 .container {
     width: 100%;
     min-height: 640px;
