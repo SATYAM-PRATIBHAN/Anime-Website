@@ -6,32 +6,31 @@ window.addEventListener('scroll', () => {
     header.classList.toggle("shadow", window.scrollY > 0);
 });
 
-
 //swiper
-document.addEventListener("DOMContentLoaded", function() {
-  var swiper = new Swiper(".coming-container", {
-      spaceBetween: 20,
-      loop: true,
-      autoplay: {
-          delay: 2000,
-          disableOnInteraction: false,
-      },
-      centeredSlides: true,
-      breakpoints: {
-          0: {
-              slidesPerView: 2,
-          },
-          568: {
-              slidesPerView: 3,
-          },
-          768: {
-              slidesPerView: 4,
-          },
-          968: {
-              slidesPerView: 5,
-          },
-      }
-  });
+document.addEventListener("DOMContentLoaded", function () {
+    var swiper = new Swiper(".coming-container", {
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
+        centeredSlides: true,
+        breakpoints: {
+            0: {
+                slidesPerView: 2,
+            },
+            568: {
+                slidesPerView: 3,
+            },
+            768: {
+                slidesPerView: 4,
+            },
+            968: {
+                slidesPerView: 5,
+            },
+        }
+    });
 });
 
 /* Responsive Navbar Toggle */
@@ -50,18 +49,23 @@ window.addEventListener('scroll', () => {
 });
 
 // Initialize Swiper for home section
-var swiper = new Swiper(".home", {
+var swiper = new Swiper(".home.swiper", {
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
+      delay: 5000,
+      disableOnInteraction: false,
     },
     pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+      el: ".swiper-pagination",
+      clickable: true,
     },
-});
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    loop: true,
+  });
 
 // Initialize Swiper for coming section
 var swiper = new Swiper(".coming-container", {
